@@ -38,7 +38,7 @@
     вывести этот элемент в консоль.
      */
 
-    let elem = document.getElementById('super_link');
+    const elem = document.getElementById('super_link');
     console.log(elem);
 
     /*
@@ -46,7 +46,7 @@
     поменяйте текст внутри элемента на "ссылка".
      */
 
-    let link = document.querySelectorAll('.card-link');
+    const link = document.querySelectorAll('.card-link');
     link.forEach(el => el.textContent = 'ссылка');
 
     /*
@@ -54,7 +54,7 @@
     элементе с классом "card-body" и вывести полученную коллекцию в консоль.
      */
 
-    let cardEl = document.querySelectorAll('.card-body .card-link');
+    const cardEl = document.querySelectorAll('.card-body .card-link');
     console.log(cardEl);
 
     /*
@@ -62,21 +62,21 @@
     data-number со значением 50 и вывести его в консоль.
      */
 
-    let firstNum = document.querySelector('[data-number="50"]');
+    const firstNum = document.querySelector('[data-number="50"]');
     console.log(firstNum);
 
     /*
     5. Выведите содержимое тега title в консоль.
      */
 
-    let tag = document.title;
+    const tag = document.title;
     console.log(tag);
 
     /*
     6. Получите элемент с классом "card-title" и выведите его родительский узел
     в консоль.
      */
-    let elem6 = document.querySelector('.card-title');
+    const elem6 = document.querySelector('.card-title');
     console.log(elem6.parentNode);
 
     /*
@@ -84,8 +84,8 @@
     тег в начало элемента, который имеет класс "card".
      */
 
-    let card = document.querySelector('.card');
-    let paragraph = document.createElement('p');
+    const card = document.querySelector('.card');
+    const paragraph = document.createElement('p');
     paragraph.innerText = 'Привет';
     card.insertAdjacentElement("afterbegin", paragraph);
     // Более короткая запись, но не уверена что так можно делать
@@ -96,7 +96,7 @@
     8. Удалите тег h6 на странице.
      */
 
-    let h6 = document.querySelector('h6');
+    const h6 = document.querySelector('h6');
     h6.remove();
 
   </script>
